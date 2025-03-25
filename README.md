@@ -1,5 +1,7 @@
 # Nuxt Minimal Starter
 
+Build almaya gerek yok Cloudflare üzerinde otomatik dağıtım yapılıyor. 
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
@@ -38,18 +40,21 @@ yarn preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-## Boykot.json Ekleme
+## kanit.csv Ekleme
 
-`boykot.json` dosyasına ekleme yapmak için aşağıdaki formatı kullanın:
+`data/kanit.csv` dosyasına ekleme yapmak için aşağıdaki formatı kullanın:
 
-```json
-[
-  {
-    "isim": "John Doe",
-    "kategori": "Kişiler",
-    "sebep": "deneme sistemi",
-    "sehir": "İstanbul",
-    "konum": "40.93784734591586, 29.124772782482356"
-  }
-]
+```csv
+Ad Soyad,Sicil yada Kimlik,Kanıt,Şehir,Tarih,Sebep
+John Doe,123456789,Google Drive Public Link (Video/Image),İstanbul,2023-10-01,Sebep açıklaması
+```
+
+## boykot.csv Ekleme
+
+`data/boykot.csv` dosyasına ekleme yapmak için aşağıdaki formatı kullanın:
+
+```csv
+isim,kategori,sebep,sehir,konum
+John Doe,Ulaşım,Sebep açıklaması,İstanbul,40.93784734591586;29.124772782482356
+John Doe,Ulaşım,Sebep açıklaması,İstanbul,https://www.google.com/maps/embed?....
 ```
