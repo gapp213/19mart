@@ -111,6 +111,11 @@ import debounce from 'lodash.debounce';
 import rawCSV from '../data/kanit.csv?raw';
 import Papa from 'papaparse';
 
+useSeoMeta({
+  title: 'Türkiye Cumhuriyeti Sosyal Kanıt Listesi',
+  description: 'Türkiye Cumhuriyeti Sosyal Kanıt Listesi',
+})
+
 const csvData = Papa.parse(rawCSV, { header: true, skipEmptyLines: true });
 const data = csvData.data
 

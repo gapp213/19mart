@@ -42,3 +42,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useSeoMeta({
+  title: 'Türkiye Cumhuriyeti Direniş Açık Çağrı',
+  description: 'Türkiye Cumhuriyeti Direniş Açık Çağrı',
+})
+</script>
