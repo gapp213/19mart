@@ -99,6 +99,11 @@ import debounce from 'lodash.debounce';
 import rawCSV from '../data/boykot.csv?raw';
 import Papa from 'papaparse';
 
+useSeoMeta({
+  title: 'Türkiye Cumhuriyeti Boykot Listesi',
+  description: 'Türkiye Cumhuriyeti Boykot Listesi',
+})
+
 const csvData = Papa.parse(rawCSV, { header: true, skipEmptyLines: true });
 const data = csvData.data
 
